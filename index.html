@@ -1,17 +1,52 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bologna Birthday Bingo</title>
-  <link rel="stylesheet" href="styles.css">
-  <script src="script.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bingo Feld</title>
+    <link rel="stylesheet" href="style.css"> <!-- Verlinkung der CSS-Datei -->
 </head>
 <body>
-  <div class="container">
-    <h1>Bologna Birthday Bingo 🎉</h1>
-    <div id="bingo-board" class="bingo-board"></div>
-    <div id="bingo-message" class="bingo-message"></div>
-  </div>
+    <div class="container">
+      <h1>Bologna Birthday Bingo 🎉</h1>
+        <div class="grid" id="grid">
+            <!-- Zeile 1 -->
+            <div class="bingo-tile">🍕 Pizza im Fenster</div>
+            <div class="bingo-tile">🇮🇹 Gestikulierender Italiener</div>
+            <div class="bingo-tile">🧣 Schal bei Sonne</div>
+            <div class="bingo-tile">🛵 Vespa</div>
+            <div class="bingo-tile">🧑‍🎓 Studenten</div>
+
+            <!-- Zeile 2 -->
+            <div class="bingo-tile">🧱 Roter Ziegelbau</div>
+            <div class="bingo-tile">📚 Leseratte draußen</div>
+            <div class="bingo-tile">🐶 Kleiner Hund</div>
+            <div class="bingo-tile">☕ Espresso draußen</div>
+            <div class="bingo-tile">🤳 Selfie-Tourist</div>
+
+            <!-- Zeile 3 -->
+            <div class="bingo-tile">🎈 Luftballon</div>
+            <div class="bingo-tile">🏛️ Sehenswürdigkeit</div>
+            <div class="bingo-tile">🎂 Torte im Fenster</div>
+            <div class="bingo-tile">🛍️ Einkaufstüten</div>
+            <div class="bingo-tile">💏 Kuss im Regen</div>
+
+            <!-- Zeile 4 -->
+            <div class="bingo-tile">📞 Lauttelefonierer</div>
+            <div class="bingo-tile">🏛️ Bogengänge</div>
+            <div class="bingo-tile">⛲ Brunnen</div>
+            <div class="bingo-tile">🎨 Graffiti</div>
+            <div class="bingo-tile">🖼️ Statue/Denkmal</div>
+
+            <!-- Zeile 5 -->
+            <div class="bingo-tile">🚲 Rad mit Korb</div>
+            <div class="bingo-tile">🍦 Gelato-Esser</div>
+            <div class="bingo-tile">🏪 Pizza-Imbiss</div>
+            <div class="bingo-tile">🎶 Straßenmusikant</div>
+            <div class="bingo-tile">😴 Schlafende Person</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script> <!-- Verlinkung der JavaScript-Datei -->
 </body>
 </html>
