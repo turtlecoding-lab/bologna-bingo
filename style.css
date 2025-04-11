@@ -41,3 +41,29 @@ body {
   background-color: #4CAF50; /* Grüner Hintergrund */
   color: white; /* Weißer Text */
 }
+
+/* Media Query für kleinere Geräte (z.B. Smartphones) */
+@media screen and (max-width: 768px) {
+  .grid {
+      grid-template-columns: repeat(4, 120px); /* Weniger Spalten für kleinere Bildschirme */
+      grid-template-rows: repeat(5, 120px); /* Kleinere Zeilenhöhe */
+  }
+
+  .bingo-tile {
+      font-size: 14px; /* Kleinere Schriftgröße */
+      padding: 8px; /* Weniger Padding */
+  }
+}
+
+/* Media Query für noch kleinere Geräte (z.B. Smartphones im Hochformat) */
+@media screen and (max-width: 480px) {
+  .grid {
+      grid-template-columns: repeat(3, 100px); /* Noch weniger Spalten */
+      grid-template-rows: repeat(5, 100px); /* Noch kleinere Zeilenhöhe */
+  }
+
+  .bingo-tile {
+      font-size: 12px; /* Noch kleinere Schriftgröße */
+      padding: 6px; /* Noch weniger Padding */
+  }
+}
