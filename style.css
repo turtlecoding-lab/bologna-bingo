@@ -1,46 +1,42 @@
 body {
   font-family: Arial, sans-serif;
   display: flex;
-  justify-content: center; /* Zentrieren des gesamten Inhalts horizontal */
-  align-items: flex-start; /* Inhalt oben beginnen lassen */
+  justify-content: flex-start; /* Inhalt soll oben bleiben */
   flex-direction: column; /* Vertikale Ausrichtung */
-  height: auto;
+  height: auto; /* Damit der Body die volle Höhe des Inhalts bekommt */
   margin: 0;
   background-color: #f4f4f4;
-  overflow-x: auto;
-  overflow-y: auto;
+  overflow-x: auto; /* Horizontale Scrollbar bleibt aktiv */
+  overflow-y: auto; /* Vertikales Scrollen ermöglichen */
 }
 
 .container {
   text-align: center;
   width: 100%;
-  padding-top: 20px;
-  display: flex;
-  justify-content: center; /* Zentriert die Überschrift horizontal */
-  flex-direction: column; /* Damit die Überschrift und das Gitter vertikal angeordnet sind */
-  align-items: center; /* Zentriert die Inhalte (Überschrift und Gitter) in der Mitte */
+  padding-top: 20px; /* Abstand zur oberen Kante */
 }
 
 h1 {
-  font-size: 20px;
+  font-size: 20px; /* Anpassen der Schriftgröße für kleinere Geräte */
   margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+/* Die Emojis in der Überschrift kleiner machen */
 h1 span {
   font-size: 1.5em; /* Verkleinert die Emojis */
-  margin-right: 5px; /* Abstand zwischen Emoji und Text */
+  margin-right: 5px; /* Ein wenig Abstand zwischen Emoji und Text */
 }
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(5, 150px); 
-  grid-template-rows: repeat(5, 150px); 
+  grid-template-columns: repeat(5, 150px); /* Feste Breite der Spalten */
+  grid-template-rows: repeat(5, 150px); /* Feste Höhe der Reihen */
   gap: 5px;
-  width: 800px; 
-  margin-top: 20px;
+  width: 800px; /* Breite des Grids */
+  margin-top: 20px; /* Abstand nach der Überschrift */
 }
 
 .bingo-tile {
@@ -60,7 +56,8 @@ h1 span {
   background-color: #e2e2e2;
 }
 
+/* Grüne Hervorhebung bei Klick */
 .bingo-tile.highlight {
-  background-color: #4CAF50;
-  color: white;
+  background-color: #4CAF50; /* Grüner Hintergrund */
+  color: white; /* Weißer Text */
 }
