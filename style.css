@@ -1,18 +1,33 @@
 body {
   font-family: Arial, sans-serif;
   display: flex;
-  justify-content: flex-start; /* Stellen wir sicher, dass der Inhalt oben bleibt */
-  flex-direction: column; /* Vertikale Ausrichtung des Inhalts */
-  height: 100vh; /* Stellen sicher, dass die Höhe des Viewports genutzt wird */
+  justify-content: flex-start; /* Inhalt soll oben bleiben */
+  flex-direction: column; /* Vertikale Ausrichtung */
+  height: auto; /* Damit der Body die volle Höhe des Inhalts bekommt */
   margin: 0;
   background-color: #f4f4f4;
   overflow-x: auto; /* Horizontale Scrollbar bleibt aktiv */
+  overflow-y: auto; /* Vertikales Scrollen ermöglichen */
 }
 
 .container {
   text-align: center;
-  width: 100%; /* Sicherstellen, dass die Container-Breite den gesamten Bildschirm ausnutzt */
-  padding-top: 20px; /* Etwas Abstand zur oberen Kante */
+  width: 100%;
+  padding-top: 20px; /* Abstand zur oberen Kante */
+}
+
+h1 {
+  font-size: 20px; /* Anpassen der Schriftgröße für kleinere Geräte */
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Die Emojis in der Überschrift kleiner machen */
+h1 span {
+  font-size: 1.5em; /* Verkleinert die Emojis */
+  margin-right: 5px; /* Ein wenig Abstand zwischen Emoji und Text */
 }
 
 .grid {
@@ -20,7 +35,7 @@ body {
   grid-template-columns: repeat(5, 150px); /* Feste Breite der Spalten */
   grid-template-rows: repeat(5, 150px); /* Feste Höhe der Reihen */
   gap: 5px;
-  width: 800px; /* Breite des Grids über die gesamte Breite hinaus */
+  width: 800px; /* Breite des Grids */
   margin-top: 20px; /* Abstand nach der Überschrift */
 }
 
