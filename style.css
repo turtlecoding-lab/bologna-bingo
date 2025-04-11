@@ -1,18 +1,18 @@
 body {
   font-family: Arial, sans-serif;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  justify-content: flex-start; /* Stellen wir sicher, dass der Inhalt oben bleibt */
+  flex-direction: column; /* Vertikale Ausrichtung des Inhalts */
+  height: 100vh; /* Stellen sicher, dass die Höhe des Viewports genutzt wird */
   margin: 0;
   background-color: #f4f4f4;
-  overflow-x: auto; /* Horizontale Scrollbar hinzufügen */
-  width: 100%; /* Sicherstellen, dass der Body den gesamten Bildschirm ausfüllt */
+  overflow-x: auto; /* Horizontale Scrollbar bleibt aktiv */
 }
 
 .container {
   text-align: center;
-  width: 100%; /* Damit die Container-Breite den gesamten Bildschirm ausnutzt */
+  width: 100%; /* Sicherstellen, dass die Container-Breite den gesamten Bildschirm ausnutzt */
+  padding-top: 20px; /* Etwas Abstand zur oberen Kante */
 }
 
 .grid {
@@ -21,6 +21,7 @@ body {
   grid-template-rows: repeat(5, 150px); /* Feste Höhe der Reihen */
   gap: 5px;
   width: 800px; /* Breite des Grids über die gesamte Breite hinaus */
+  margin-top: 20px; /* Abstand nach der Überschrift */
 }
 
 .bingo-tile {
