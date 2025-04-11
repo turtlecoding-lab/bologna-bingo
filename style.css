@@ -6,19 +6,21 @@ body {
   height: 100vh;
   margin: 0;
   background-color: #f4f4f4;
+  overflow-x: auto; /* Horizontale Scrollbar hinzufügen */
+  width: 100%; /* Sicherstellen, dass der Body den gesamten Bildschirm ausfüllt */
 }
 
 .container {
   text-align: center;
+  width: 100%; /* Damit die Container-Breite den gesamten Bildschirm ausnutzt */
 }
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr); /* Flexible Spalten */
-  grid-template-rows: repeat(5, 1fr); /* Flexible Reihen */
+  grid-template-columns: repeat(5, 150px); /* Feste Breite der Spalten */
+  grid-template-rows: repeat(5, 150px); /* Feste Höhe der Reihen */
   gap: 5px;
-  width: 90vw; /* Breite auf 90% der Viewport-Breite setzen */
-  max-width: 800px; /* Maximalbreite für große Bildschirme */
+  width: 800px; /* Breite des Grids über die gesamte Breite hinaus */
 }
 
 .bingo-tile {
@@ -32,7 +34,6 @@ body {
   text-align: center;
   cursor: pointer;
   user-select: none;
-  box-sizing: border-box;
 }
 
 .bingo-tile:hover {
@@ -43,28 +44,4 @@ body {
 .bingo-tile.highlight {
   background-color: #4CAF50; /* Grüner Hintergrund */
   color: white; /* Weißer Text */
-}
-
-/* Media Query für Handys */
-@media (max-width: 600px) {
-  .grid {
-    grid-template-columns: repeat(3, 1fr); /* 3 Spalten auf Handys */
-    width: 95vw; /* Breite noch etwas erhöhen */
-  }
-
-  .bingo-tile {
-    font-size: 12px; /* Kleinere Schriftgröße auf Handys */
-    padding: 8px; /* Etwas weniger Abstand */
-  }
-}
-
-@media (max-width: 400px) {
-  .grid {
-    grid-template-columns: repeat(2, 1fr); /* 2 Spalten auf sehr kleinen Handys */
-  }
-
-  .bingo-tile {
-    font-size: 10px; /* Noch kleinere Schriftgröße */
-    padding: 6px; /* Weniger Abstand */
-  }
 }
