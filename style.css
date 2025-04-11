@@ -1,0 +1,73 @@
+/* Basic Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .container {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  /* Bingo Board Styles */
+  .bingo-board {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .bingo-tile {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .bingo-tile:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .bingo-tile.selected {
+    background-color: #a8e6a3;
+  }
+  
+  .bingo-message {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #e91e63;
+    display: none;
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 600px) {
+    h1 {
+      font-size: 1.5rem;
+    }
+  
+    .bingo-board {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  
